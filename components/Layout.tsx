@@ -4,16 +4,17 @@ import Navbar from "./Navbar.tsx";
 interface LayoutProps {
   children: React.ReactNode;
   dbMode?: "cloud" | "fallback" | string;
+  setRoute?: (route: string) => void;
 }
 
-export default function Layout({ children, dbMode }: LayoutProps) {
+export default function Layout({ children, dbMode, setRoute }: LayoutProps) {
   return (
     <div className="min-h-screen flex flex-col bg-[#030305] text-[#00f0ff] font-sans selection:bg-[#ff00ff] selection:text-black">
       {/* GLITCH HEADER CORNER LINES */}
       <div className="fixed top-0 left-0 w-full h-[2px] bg-gradient-to-r from-cyan-500 via-pink-500 to-cyan-500 z-50 animate-pulse" />
       
       {/* DECENTRALIZED TERMINAL LAYOUT */}
-      <Navbar dbMode={dbMode} />
+      <Navbar dbMode={dbMode} setRoute={setRoute} />
 
       <main className="flex-1 max-w-7xl w-full mx-auto p-4 md:p-8 relative">
         {/* SUBTLE CORNER MARKINGS FOR RETRO UI */}

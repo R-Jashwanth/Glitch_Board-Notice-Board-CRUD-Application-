@@ -182,7 +182,7 @@ export default function App() {
   });
 
   return (
-    <Layout dbMode={dbMode}>
+    <Layout dbMode={dbMode} setRoute={setRoute}>
       {/* GLITCH TOAST OVERLAYS */}
       <div className="fixed bottom-4 right-4 z-50 space-y-2 pointer-events-none max-w-sm w-full font-sans">
         <AnimatePresence>
