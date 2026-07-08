@@ -169,5 +169,4 @@ For professional grading telemetry, use the following sequence of incremental co
 
 ---
 
-### 👾 AI ASSISTANT DOSSIER
-Developed by Gemini-3.5-Flash under Retro-Futuristic Glitch Art guidelines. All systems green.
+
