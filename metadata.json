@@ -1,0 +1,6 @@
+{
+  "name": "Notice Board",
+  "description": "A high-fidelity decentralized information terminal for broadcasting high-priority bulletins and notices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

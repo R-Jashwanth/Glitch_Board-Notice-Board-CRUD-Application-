@@ -1,0 +1,26 @@
+// GLITCH_BOARD SCHEMATIC MATRIX
+// DATABASE INTERFACE: POSTGRESQL (SUPABASE / NEON)
+// DATA-STREAM PROTOCOL V1.0.0
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Notice {
+  id          String   @id @default(uuid())
+  title       String
+  body        String
+  category    String   // Exam, Event, General
+  priority    String   // Normal, Urgent
+  publishDate DateTime
+  image       String?  // Base64 or URL data-node
+  createdAt   DateTime @default(now())
+
+  @@map("Notice")
+}

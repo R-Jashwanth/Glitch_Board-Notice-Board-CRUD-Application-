@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Share Tech Mono", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "VT323", ui-monospace, monospace;
+}
+
+@layer utilities {
+  .glitch-shadow-cyan {
+    text-shadow: 2px 2px 0px #00f0ff, -1px -1px 0px #ff00ff;
+  }
+  .glitch-shadow-magenta {
+    text-shadow: -2px -2px 0px #ff00ff, 1px 1px 0px #00f0ff;
+  }
+  .neon-border-cyan {
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5), inset 0 0 10px rgba(0, 240, 255, 0.3);
+    border: 1px solid #00f0ff;
+  }
+  .neon-border-magenta {
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5), inset 0 0 10px rgba(255, 0, 255, 0.3);
+    border: 1px solid #ff00ff;
+  }
+}
+
+/* CUSTOM SCANLINE & CORE TERMINAL EFFECTS */
+body {
+  background-color: #030305;
+  background-image: radial-gradient(circle, #0c0a12 0%, #030305 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 9999;
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
+
+@keyframes glitch-anim {
+  0% {
+    clip-path: inset(40% 0 61% 0);
+  }
+  20% {
+    clip-path: inset(92% 0 1% 0);
+  }
+  40% {
+    clip-path: inset(5% 0 85% 0);
+  }
+  60% {
+    clip-path: inset(57% 0 43% 0);
+  }
+  80% {
+    clip-path: inset(15% 0 80% 0);
+  }
+  100% {
+    clip-path: inset(80% 0 5% 0);
+  }
+}
+
+.animate-glitch {
+  animation: glitch-anim 1s linear infinite alternate-reverse;
+}
