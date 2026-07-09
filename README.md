@@ -1,6 +1,19 @@
 # Notice Board CRUD Application
 
-A full-stack Notice Board application built as part of the **Reno Platforms Web Development Assignment**. The application supports complete CRUD (Create, Read, Update, Delete) operations for notices with server-side validation, Prisma ORM, and a hosted PostgreSQL database.
+![TypeScript](https://img.shields.io/badge/TypeScript-60.4%25-3178C6?style=flat-square&logo=typescript)
+![JavaScript](https://img.shields.io/badge/JavaScript-36.8%25-F7DF1E?style=flat-square&logo=javascript)
+![CSS](https://img.shields.io/badge/CSS-2.4%25-1572B6?style=flat-square&logo=css3)
+![HTML](https://img.shields.io/badge/HTML-0.4%25-E34C26?style=flat-square&logo=html5)
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+A full-stack Notice Board application built as part of the **Reno Platforms Web Development Assignment**. The application supports complete CRUD (Create, Read, Update, Delete) operations for notices.
 
 ## Features
 
